@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    --color-primary: #005b7d;
+    --color-secondary: #0066ff;
+    --color-tertiary: #b700ff;
+    --color-header-text: var(--color-presentation-text);
+    --color-presentation-text: #c7f0ff;
+    --color-em-presentation-text: hsl(196, 72%, 73%);
+    --color-studi:#ffb527;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.studi {
+    color: var(--color-studi);
+}
+
+em {
+    color:var(--color-em-presentation-text);
+    font-style: normal;
+}
+/*
+    Header et nav
+*/
+
+header {
+    width: 100%;
+    height: 10vh;
+    /* margin-bottom: 1rem; */
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    color: var(--color-header-text)
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.lien-menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 5.5rem;
+    margin: 0 0.5rem;
+    color: var(--color-presentation-text);
+}
+
+nav a {
+    color: var(--color-header-text);
+}
+
+nav a:hover {
+    font-weight: bold
+}
+
+/*
+    Section Présentation
+*/
+#Presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: auto;
+    background-color: var(--color-primary);
+    color: var(--color-presentation-text);
+}
+.bv-web-dev {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-presentation-text);
+}
+.presentation-text {
+    width: 50%;
+    text-align: left;
+    color:white;
+}
+.presentation-text p a {
+    font-weight: bold;
+    color: var(--color-studi);
+}
+.presentation-text p a:hover {
+    font-weight: bold;
+    color: #ffa704;
+    text-decoration:underline
+}
+.send-me-msg{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-presentation-text);
+    border-radius: 50px;
+    
+}
+.send-me-msg a {
+    color:var(--color-primary);
+    text-decoration: none;
+}
+.photo img {
+    height: 50vh;
+    width:auto;
+    border-radius: 5%;
+    margin: 0 1rem;
+}
+
+/*
+    Section Contact
+*/
+
+#Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    background-color: var(--color-primary);
+    color: var(--color-presentation-text);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    /* background-color: var(--color-secondary); */
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    gap: 2 rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.nom-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+label {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+input[type="text"], input[type="email"], textarea {
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    border:none;
+}
+
+/* Section Belote */
+
+#Projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(white);
+    color: var(--color-primary);
+    gap: 1rem;
+    /* margin-top: 20vh; */
+}
+
+#Projet img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    #Presentation {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .bv-web-dev {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .presentation-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .photo img {
+        height: 15rem;
+        width:auto;
+        border-radius: 5%;
+        margin: 0 1rem;
+    }
+    form {
+        width: 100vW;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .nom-email {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

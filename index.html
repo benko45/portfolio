@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Asset/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><span class = "studi">B</span>enoît <span class = "studi">V</span>icente</h1>
+                <h3><span class = "studi">Dév</span>eloppeur <span class = "studi">W</span>eb</h3>
+            </div >
+            <div class="menu">
+                <div class="lien-menu">
+                    <a href="#Presentation">Accueil</a>
+                </div>
+                <div class="lien-menu">
+                    <a href="#Projet">Projet</a>
+                </div>
+                <div class="lien-menu">
+                    <a href="#Contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Presentation">
+            <div class="presentation-text">
+                <div class="bv-web-dev">
+                    <h1><span class = "studi">B</span>enoît <span class = "studi">V</span>icente</h1>
+                    <h2><span class = "studi">Dév</span>eloppeur <span class = "studi">W</span>eb</h2>
+                </div>
+                <p>Je m'appelle Benoît Vicente</p>
+                <p>J'ai 54 ans et je suis <em>développeur web</em>.</p>
+                <p>Tombé dans le codage quand j'étais adolescent, j'ai d'abord appris le développement web en <em>autodidacte</em>.</p>
+                <p>J'ai quitté mon poste de professeur de <em>mathématiques</em> dans le secondaire pour me former chez <a href="https://www.studi.com/fr" title="STUDI" target="_blank">STUDI</a> et me lancer avec <em>passion</em> dans une nouvelle aventure.</p>
+                <div class="send-me-msg">
+                    <a href="mailto:benoit.vicente@hotmail.fr">UN PROJET ? ÉCRIVEZ-MOI</a>
+                </div>
+                <!-- <p> en HTML, CSS, JavaScript, PHP et MySQL. Je suis également à l'aise avec les frameworks Bootstrap, React et Angular. Je suis actuellement à la recherche d'un emploi en tant que développeur web.</p> -->
+            </div>
+            <div class="photo">
+                <img src="./Asset/img/photo.jpg" alt="Photo de Benoît Vicente">
+            </div>
+        </section>
+        <section id="Projet">
+            <h2>Jeu de belote</h2>
+            <p>Un projet réalisé en React.js</p>
+            <img src="./Asset/img/belote.png" alt="Image d'une table de belote">
+        </section>
+        <section id="Contact">
+                <h2>Parlons de votre projet</h2>
+                <form action="send_email.php" method="post">
+                    <div class="nom-email">
+                        <div class="form-group">
+                            <label for="nom">nom</label>
+                            <input type="text" name="nom" id="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" rows="10" required></textarea>
+                    </div>
+                    <input type="submit" name="submit" id="submit"  value="Envoyer" class="send-me-msg">
+                </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
